@@ -41,7 +41,7 @@ export const copyPosition = (position) => {
 };
 
 export const areSameColorTiles = (coords1, coords2) =>
-  (coords1.x + coords1.y) % 2 === coords2.x + coords2.y;
+  (coords1.x + coords1.y) % 2 === (coords2.x + coords2.y) % 2;
 
 export const findPieceCoords = (position, type) => {
   let results = [];
